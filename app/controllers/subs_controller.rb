@@ -124,6 +124,7 @@ class SubsController < ApplicationController
   end
 
   private
+  # { sub: { title: 'title' } }
   def sub_params
     params.require(:sub).permit(:title)
   end
